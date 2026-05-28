@@ -1,0 +1,14 @@
+# 真实收方配置：包含真实账号/户名/开户银行/支行，绝不允许提交到 git。
+laicanyuan_payee.local.json
+laicanyuan_payee.local.*.json
+
+# 运行产物：日志、bank_form 快照、子进程截图、临时备份。
+runs/
+*.log
+
+# 单实例锁与其它 runtime 状态（含 pid / started_at / run_dir 引用，不入库）。
+runtime/
+
+# Python cache
+__pycache__/
+*.py[cod]

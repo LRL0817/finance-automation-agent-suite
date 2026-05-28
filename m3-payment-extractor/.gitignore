@@ -1,0 +1,13 @@
+__pycache__/
+.browser_profile/
+.env
+.claude/settings.local.json
+.codex/settings.local.json
+runtime/
+data/
+latest.json
+bank_form.json
+bank_forms/
+bank_batches/
+bank_runs/
+*.pyc

@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.py[cod]
+
+debug_runs/
+logs/
+*.log
+
+*.tmp
+*.bak

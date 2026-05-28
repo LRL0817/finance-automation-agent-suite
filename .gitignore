@@ -1,0 +1,73 @@
+# Secrets and local credentials
+.env
+.env.local
+*.local.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Runtime state and generated data
+runtime/
+data/
+logs/
+log/
+screenshots/
+runs/
+debug_runs/
+artifacts/
+cache/
+tmp/
+temp/
+output/
+out/
+coverage/
+.browser_profile/
+.playwright-shots/
+.playwright-shots-manual*/
+
+# Dependencies and build outputs
+node_modules/
+dist/
+build/
+target/
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Logs and local diagnostics
+*.log
+*.out
+*.err
+gateway.out*
+gateway.err*
+
+# Local screenshots/media that may contain financial data
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.mp4
+*.mov
+*.avi
+
+# Bank/USB vendor binaries and drivers
+*.exe
+*.dll
+*.sys
+*.cat
+*.inf
+*.vxd
+*.com
+*.bat.log
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.claude/

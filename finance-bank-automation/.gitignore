@@ -1,0 +1,74 @@
+# Credentials and local secrets
+.env
+.env.*
+*.env
+# ...but keep non-secret env templates tracked (no real values inside)
+!.env.example
+!**/.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.cer
+*.crt
+
+# Python/cache/runtime noise
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local IDE/agent state
+.claude/
+.codex/
+.vscode/
+.idea/
+
+# Bank run artifacts and screenshots
+**/screenshots/
+**/runs/
+**/runtime/
+**/debug_runs/
+**/live_screenshots/
+**/page_screenshots/
+**/artifacts/
+**/logs/
+*.log
+*.err.log
+*.out.log
+
+# Generated transfer payloads and sensitive extracted data
+**/bank_form.json
+**/balance.json
+**/summary.json
+**/*_raw.json
+**/*_bank_form_test.json
+**/latest30_bank_forms_test.json
+**/extract_failures.json
+# Real OA/M3 extracted payment data and batch payloads (must never be committed)
+**/latest.json
+**/latest30*.json
+**/screenshot_transfer_batch*.json
+**/transfer_batch*.json
+**/transfer_data.json
+# Real bank-portal / transfer screenshots (templates use .example.* names instead)
+**/screenshot*.png
+**/screenshot*.jpg
+# USB-hub controller runtime log (vendor tool writes log.txt next to the exe)
+**/log.txt
+
+# USBHub 厂商驱动与控制软件（vendor 二进制，本机已安装，不入库；保留 hub_ctrl.py 入库）
+# - CH341 串口驱动安装包：SETUP.EXE / *.sys / *.SYS / *.DLL / *.CAT / *.INF / *.VXD 等
+/公共/usbhub/usbhub/CH341SER/
+# - "第一步驱动包"：CH341SER.exe 等驱动安装器
+/公共/usbhub/usbhub/多口USB控制器软件以及驱动/第一步驱动包/
+# - "第二步软件"：usbHubCtrl.exe + Qt*.dll + vc_redist.x64.exe 等厂商控制软件
+/公共/usbhub/usbhub/多口USB控制器软件以及驱动/第二步软件/
+
+# Windows and Office temporary files
+Thumbs.db
+Desktop.ini
+~$*
+*.tmp
+*.bak

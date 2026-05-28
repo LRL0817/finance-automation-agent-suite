@@ -1,0 +1,23 @@
+# 含明文银行密码，禁止提交
+.env
+.env.local
+.env.*.local
+
+# 运行截图（含转账金额、账号、户名等敏感信息）
+screenshots/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# IDE / 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 本地日志 / 临时文件
+*.log
+*.tmp

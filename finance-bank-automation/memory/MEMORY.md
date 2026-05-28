@@ -1,0 +1,1 @@
+- [回复风格](feedback_response_style.md) — 别"AI 味"：短句直接拍板，少表格/✅/套话/三段式总结

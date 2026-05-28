@@ -1,0 +1,28 @@
+{
+  "name": "feishu-agent-gateway",
+  "version": "0.1.0",
+  "description": "MVP gateway for controlling Codex / Claude Code from Feishu chat commands.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.24.0",
+    "dotenv": "^16.4.7"
+  },
+  "overrides": {
+    "axios": "^1.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
